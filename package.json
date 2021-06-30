@@ -24,7 +24,7 @@
     "deploy_simplest": "babel-node src/client/deploy_simplest.js",
     "dice_simplest": "babel-node src/client/dice_simplest.js",
     "election_simplest": "babel-node src/client/election_simplest.js",
-    "build_rejectdups": "cargo build-bpf --manifest-path=./src/rejectdups-rust/Cargo.toml --bpf-out-dir=dist/program && mv dist/program/solana_bpf_rejectdups.so dist/program/rejectdups.so && rm -rf store/rejectdups.json",
+    "build_advdice": "cargo build-bpf --manifest-path=./src/rejectdups-rust/Cargo.toml --bpf-out-dir=dist/program && mv dist/program/solana_bpf_rejectdups.so dist/program/rejectdups.so && rm -rf store/rejectdups.json",
     "test_advdice": "./src/do.sh rejectdups-rust test",
     "clean_advdice": "./src/do.sh rejectdups-rust clean && rm -rf store/rejectdups.json",
     "deploy_advdice": "babel-node src/client/deploy_rejectdups.js",
